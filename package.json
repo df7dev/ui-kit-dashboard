@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Dashboard",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "docker-compose": "^0.14.5"
+  },
   "devDependencies": {
     "bootstrap": "^4.3.1",
     "gulp": "^4.0.0",
