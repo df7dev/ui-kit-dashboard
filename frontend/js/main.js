@@ -1,1 +1,1 @@
-var dev = "Diogo Franco Web";
+require('./custom/sidebar');
