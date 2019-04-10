@@ -11,15 +11,23 @@ gulp.task('compress-old', function() {
       .pipe(rename('app.min.js'))
       .pipe(gulp.dest('./public/build/js/'))
 });
-
+// JS
 gulp.task('compress', function(){
-  return gulp.src(['./node_modules/jquery/dist/jquery.min.js', './node_modules/bootstrap/dist/js/bootstrap.min.js',  './frontend/js/custom/sidebar.js'])
+  return gulp.src(['./node_modules/jquery/dist/jquery.min.js', './node_modules/bootstrap/dist/js/bootstrap.min.js', './node_modules/@fortawesome/fontawesome-free/js/all.min.js',  './frontend/js/custom/sidebar.js'])
       .pipe(concat('concat.js'))
       .pipe(gulp.dest('./public/build/js/'))
+      .pipe(rename('app.js'))
       .pipe(uglify())
       .pipe(gulp.dest('./public/build/js/'));
 });
 
+// Fonts
+gulp.task('icons', function() {
+  return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+      .pipe(gulp.dest('./public/build/webfonts/'));
+});
+
+// Sass
 sass.compiler = require('node-sass');
  
 gulp.task('sass', function () {

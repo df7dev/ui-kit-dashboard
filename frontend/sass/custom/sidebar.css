@@ -274,66 +274,20 @@
     position: fixed;
 }
 
-/* Animation Icon  Menu*/
+/* Sidebar on content */
 
-#nav-icon3 span:nth-child(1) {
-    top: 0px;
-  }
-  
-  #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
-    top: 18px;
-  }
-  
-  #nav-icon3 span:nth-child(4) {
-    top: 36px;
-  }
-  
-  #nav-icon3.open span:nth-child(1) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
-  }
-  
-  #nav-icon3.open span:nth-child(2) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  
-  #nav-icon3.open span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-  
-  #nav-icon3.open span:nth-child(4) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
-  }
-
-  /* Scroll for menu */
-
-
-/* width */
-.jquery-accordion-menu ::-webkit-scrollbar {
-  width: 10px;
+.navbar-content {
+    width:100%;
+    position: fixed;
+    top:0;
+    background-color: #f0f0f0;
 }
 
-/* Track */
-.jquery-accordion-menu ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-/* Handle */
-.jquery-accordion-menu ::-webkit-scrollbar-thumb {
-  background: #888; 
+/* Custom hamburguer */
+
+.hamburger {
+    outline: none;
+    right:0px;
 }
 
-/* Handle on hover */
-.jquery-accordion-menu ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
 

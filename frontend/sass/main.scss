@@ -1,2 +1,6 @@
-@import '../../node_modules/bootstrap/dist/css/bootstrap.min'; 
-@import './custom/sidebar'; 
+// Bootstrap
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min';
+// Button hamburger
+@import '../../node_modules/hamburgers/dist/hamburgers';
+// Custom
+@import './custom/sidebar';
