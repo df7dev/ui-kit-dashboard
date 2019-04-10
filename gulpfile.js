@@ -16,7 +16,6 @@ gulp.task('compress', function(){
   return gulp.src(['./node_modules/jquery/dist/jquery.min.js', './node_modules/bootstrap/dist/js/bootstrap.min.js',  './frontend/js/custom/sidebar.js'])
       .pipe(concat('concat.js'))
       .pipe(gulp.dest('./public/build/js/'))
-      .pipe(rename('app.js'))
       .pipe(uglify())
       .pipe(gulp.dest('./public/build/js/'));
 });
