@@ -16,4 +16,5 @@
   </head>
 
   <body>
-    <?php include'sidebar.php'; ?>
+  <div class="wrapper">
+      <?php include'sidebar.php'; ?>
