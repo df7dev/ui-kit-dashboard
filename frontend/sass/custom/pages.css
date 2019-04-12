@@ -1,0 +1,12 @@
+.content-page {
+    margin-left: 250px;
+    overflow: hidden;
+    padding: 5px 20px;
+    min-height: 80vh;
+}
+.content-page-tab {
+    margin-left: 70px;
+}
+.content-page-mob {
+    margin-left: 0px;
+} 
