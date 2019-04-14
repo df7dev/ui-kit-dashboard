@@ -1,22 +1,24 @@
 "use strict";
 
-const path = require('path'); 
+const path = require('path');
   
 module.exports = {
-  mode: 'production',
-  entry: './frontend/js/main.js',  
-  
+  mode: 'development',
+  entry: {
+    libs: './frontend/js/main.js',
+    custom: './frontend/js/custom.js'
+  },
   output: {  
-    filename: 'teste.js',  
-    path: path.resolve('dist')  
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, './public/build/js')
   },  
   
  module: {      
      rules: [        
-         {          
-             test: /\.js$/,          
-             use: 'babel-loader'        
-            }      
-        ]    
-    }  
-}
+        {  
+          test: /\.js$/,
+          loader: 'babel-loader'
+        }
+      ]    
+    }
+};
