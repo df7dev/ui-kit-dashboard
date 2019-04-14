@@ -1,3 +1,3 @@
-import 'jquery';
+require('jquery');
 import 'bootstrap';
 import '@fortawesome/fontawesome-free';

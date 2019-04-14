@@ -1,31 +1,31 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var rename = require('gulp-rename');
-var minify = require('gulp-minify');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var watch = require('gulp-watch');
-
-
-var jsFiles = './frontend/js/*.js',
-    jsDest = './public/build/js/';
+var gulp = require('gulp'),
+  sass = require('gulp-sass'),
+  rename = require('gulp-rename'),
+  minify = require('gulp-minify'),
+  uglify = require('gulp-uglify'),
+  concat = require('gulp-concat'),
+  concat = require('gulp-concat'),
+  deporder = require('gulp-deporder')
 
  
 gulp.task('compress-old', function() {
-    return gulp.src(jsFiles)
+    return gulp.src('./frontend/js/main.js')
+      .pipe(deporder())
       .pipe(minify())
-      .pipe(concat('app.js'))
-      .pipe(gulp.dest(jsDest))
+      .pipe(gulp.dest('./public/build/js/'))
 });
 // JS
 gulp.task('compress', function(){
-  return gulp.src(['./node_modules/jquery/dist/jquery.min.js', './node_modules/bootstrap/dist/js/bootstrap.min.js', './node_modules/simplebar/dist/simplebar.min.js', './frontend/js/custom/sidebar.js'])
+  return gulp.src('./frontend/js/main.js')
+      .pipe(deporder())
       .pipe(concat('concat.js'))
       .pipe(gulp.dest('./public/build/js/'))
       .pipe(rename('app.js'))
       .pipe(uglify())
       .pipe(gulp.dest('./public/build/js/'));
 });
+
+
 
 // Fonts
 gulp.task('icons', function() {
