@@ -5,16 +5,21 @@ var minify = require('gulp-minify');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var watch = require('gulp-watch');
+
+
+var jsFiles = './frontend/js/*.js',
+    jsDest = './public/build/js/';
+
  
 gulp.task('compress-old', function() {
-    return gulp.src([ './node_modules/jquery/dist/jquery.slim.min.js', './frontend/js/custom/sidebar.js' ])
+    return gulp.src(jsFiles)
       .pipe(minify())
-      .pipe(rename('app.min.js'))
-      .pipe(gulp.dest('./public/build/js/'))
+      .pipe(concat('app.js'))
+      .pipe(gulp.dest(jsDest))
 });
 // JS
 gulp.task('compress', function(){
-  return gulp.src(['./node_modules/jquery/dist/jquery.min.js', './node_modules/bootstrap/dist/js/bootstrap.min.js', './node_modules/simplebar/dist/simplebar.min.js', './node_modules/@fortawesome/fontawesome-free/js/all.min.js',  './frontend/js/custom/sidebar.js'])
+  return gulp.src(['./node_modules/jquery/dist/jquery.min.js', './node_modules/bootstrap/dist/js/bootstrap.min.js', './node_modules/simplebar/dist/simplebar.min.js', './frontend/js/custom/sidebar.js'])
       .pipe(concat('concat.js'))
       .pipe(gulp.dest('./public/build/js/'))
       .pipe(rename('app.js'))

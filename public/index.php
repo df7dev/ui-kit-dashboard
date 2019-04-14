@@ -34,9 +34,16 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <!-- Chart -->
+        <!-- Bar Graphic -->
       </div>
     </div>
+    <!-- Charts -->
+    <div class="row">
+      <div class="col-md-6">
+        <div id="chartdiv"></div>
+      </div>
+    </div>
+
 
   </div>
 
