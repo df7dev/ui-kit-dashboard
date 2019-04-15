@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/dashboard/">
 
     <!-- Custom styles for this sidebar -->
-    <link href="../build/css/app.min.css" rel="stylesheet">
+    <link href="../build/css/main.css" rel="stylesheet">
   </head>
 
   <body>
