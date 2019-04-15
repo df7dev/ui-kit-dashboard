@@ -38,12 +38,22 @@
       </div>
     </div>
     <!-- Charts -->
-    <div class="row">
+   <div class="row py-2">
       <div class="col-md-6">
-        <div id="chartdiv"></div>
+        <div class="card p-2">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-2">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <canvas id="myChart2"></canvas>
+        </div>
       </div>
     </div>
-
 
   </div>
 
