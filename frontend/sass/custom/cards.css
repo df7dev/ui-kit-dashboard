@@ -1,0 +1,80 @@
+.card {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
+    box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
+    border: none;
+}
+.update-card .card-block {
+  background-color:#fff;
+  color:#3A384A;
+  padding: 1.25rem;
+}
+.update-card .card-footer {
+  border-top: 1px solid #fff;
+  background-color:#3A384A;
+}
+.card-footer p {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.gradient-red-yellow {
+    background-image: linear-gradient(to right, #fe9365, #feb798);
+}
+.gradient-red-green {
+    background: linear-gradient(to right, #0ac282, #0df3a3);
+}
+.green-solid {
+    background: #01a9ac;
+}
+/* Percent Circle */
+.single-chart {
+    width: 33%;
+    justify-content: space-around ;
+  }
+  
+  .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: transparent;
+    stroke-width: 4.0;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.orange .circle {
+    stroke: #ffffff;
+  }
+  
+  .circular-chart.green .circle {
+    stroke: #4CC790;
+  }
+  
+  .circular-chart.blue .circle {
+    stroke: #3c9ee5;
+  }
+  
+  .percentage {
+    fill: #fff;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+    font-weight: 800;
+  }

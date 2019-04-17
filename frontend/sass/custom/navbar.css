@@ -1,0 +1,22 @@
+.wrapper .navbar{
+    z-index: 20;
+    color:#F3F0FA;
+}
+.navbar a:hover{
+    color:#FBF9FE;
+}
+.header-navbar .navbar-wrapper .navbar-logo {
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    height: 56px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 240px;
+    padding: 10px;
+}
