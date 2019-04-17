@@ -5,5 +5,10 @@
 // SampleBar
 @import'../../node_modules/simplebar/dist/simplebar.min';
 // Custom
-@import './custom/pages';
+@import './custom/body';
+@import './custom/colors';
 @import './custom/sidebar';
+@import './custom/navbar';
+@import './custom/pages';
+@import './custom/cards';
+@import './custom/tables';
