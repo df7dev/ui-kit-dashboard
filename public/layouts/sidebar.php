@@ -14,17 +14,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <div class="navbar-container container-fluid">
       <div class="float-right navbar-icon-right">
-        <i class="fas fa-search cl-gray-1"></i>
+        <i class="fas fa-user"></i>
       </div>
     </div>
   </div>
 </nav>
 <!-- Sidebar Holder -->
-<div class="left-side-menu" data-simplebar data-simplebar-auto-hide="false">
+<div class="left-side-menu" >
     <div id="jquery-accordion-menu" class="jquery-accordion-menu">
-        <div class="jquery-accordion-menu-header">DF Dashboard </div>
         <!-- SIDE BAR DESKTOP -->
-        <ul id="menu-desk" class="d-lg-none d-md-none">
+        <ul id="menu-desk" class="">
             <li class="active"><a href="#"><i class="fa fa-home"></i>Dashboard </a></li>
             <li><a href="#"><i class="fas fa-toolbox"></i>UI Kit </a></li>
             <li><a href="#"><i class="fas fa-table"></i>Tabelas </a></li>
@@ -55,6 +54,5 @@
                 </ul>
             </li>
         </ul>
-        <div class="jquery-accordion-menu-footer">Footer </div>
     </div>
 </div>
