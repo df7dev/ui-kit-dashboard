@@ -101,7 +101,7 @@
   <!-- Table -->
   <div class="row">
     <div class="col-12">
-      <table class="table table-bordered">
+      <table class="table table-bordered table-dashboard">
         <thead>
           <tr>
             <th scope="col">Select Day</th>
@@ -152,7 +152,6 @@
       </table>
     </div>
   </div>
-
 </div>
 
 <?php include'layouts/footer.php'; ?>
