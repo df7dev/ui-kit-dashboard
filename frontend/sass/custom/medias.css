@@ -1,0 +1,14 @@
+@media (max-width: 767px)
+{
+    .left-side-menu {
+        display: none;
+    }
+    .content-page{
+        margin-left:0px;
+        padding:5px 0px;
+    }
+}
+@media (min-width: 767px)
+{
+    
+}
